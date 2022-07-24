@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(30, 30, 32), rgb(22, 26, 26), rgb(32, 26, 26));
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    border: 1px dashed rgb(138, 188, 253);
+    background-color: rgb(153, 117, 236, 0.2);
+    border-radius: 20px;
+    height: 500px;
+}
+
+#heading {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(220, 236, 70), rgb(144, 230, 87));
+    font-size: 20px;
+    color: orangered;
+}
+
+#second {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#div1 {
+    width: 80%;
+    border-radius: 5px;
+    margin: 7px;
+}
+
+#div1 input {
+    width: 100%;
+    height: 25px;
+    border: 2px solid rgb(74, 77, 241);
+}
+
+#but {
+    width: 20%;
+    margin-top: 7px;
+}
+
+#btn {
+    width: 50%;
+    height: 25px;
+    background-color: palegoldenrod;
+}
+
+#items {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#items div {
+    padding: 2px;
+    margin: 4px;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+#items div p {
+    color: rgb(253, 65, 65);
+    font-weight: bold;
+    font-size: 17px;
+    width: 80%;
+    background-color: rgb(233, 182, 253, 0.7);
+    padding: 5px;
+    float: left;
+    margin: 5px;
+    word-wrap: break-word;
+}
+
+#btn:hover {
+    background-color: orangered;
+}
+
+#items div button {
+    width: 10%;
+    height: 31px;
+    margin: 5px;
+    color: brown;
+    font-weight: bold;
+    background-color: darkseagreen;
+}
+
+#items h {
+    margin-left: 10px;
+    /* text-decoration: underline; */
+    font-weight: bold;
+    color: rgb(237, 240, 71)
+}
+
+@media screen and (max-width:1080px) and (min-width:1015) {
+    #btn {
+        width: 70%;
+    }
+    #items div button {
+        width: 15%;
+    }
+    #box {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1015px) and (min-width:617px) {
+    #btn {
+        width: 70%;
+    }
+    #box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:616px) {
+    #box {
+        width: 88%;
+    }
+    #btn {
+        width: 70%;
+    }
+}
