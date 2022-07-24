@@ -66,6 +66,9 @@
     overflow: hidden;
     overflow-y: auto;
 }
+#items::-webkit-scrollbar {
+    display: none;
+}
 
 #items div {
     padding: 2px;
